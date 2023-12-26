@@ -1,5 +1,5 @@
 function sendNotification(title, body) {
-  if (!Notification) {
+  if (!('Notification' in window)) {
     // console.log('This browser does not support notifications.');
     alert('This browser does not support notifications.');
   else {
